@@ -1,0 +1,49 @@
+@import '../../../styles/index.scss';
+
+.common{
+    border: solid 1px;
+    border-radius: 24px;
+    font-weight: $weight-strong;
+}
+
+.common:disabled{
+    opacity: .5;
+}
+
+.primary{
+    background-color: $dark-pink;
+    box-shadow: $box-shadow;
+    color: $water-white;
+    letter-spacing: -0.115px;
+    padding: 1rem 1.66rem;
+}
+
+.primary:hover{
+    background-color: $charm-pink;
+}
+
+.secondary{
+    background-color: transparent;
+    font-weight: $weight-strong;
+    padding: 1rem 2.13rem;
+}
+
+.secondary--light{
+    color: $water-white;
+    border-color: $water-white;
+}
+
+.secondary--light:hover{
+    background-color: $water-white;
+    color: $san-juan-blue;
+}
+
+.secondary--dark{
+    color: $san-juan-blue;
+    border-color: $san-juan-blue;
+}
+
+.secondary--dark:hover{
+    background-color: $san-juan-blue;
+    color: $water-white;
+}
