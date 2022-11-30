@@ -1,0 +1,30 @@
+// colors
+$dark-pink: #ba4270;
+$charm-pink: #da6d97;
+$water-white: #fbfcfe;
+$mirage-blue: #1b262f;
+$san-juan-blue: #36536b;
+$san-juan-blue--light: #6c8294;
+
+
+// typography
+$font-family-dm-serif: 'DM Serif Display', serif;
+$font-family-public-sans: 'Public Sans', sans-serif;
+
+$size-normal: 15px;
+$size-title--large: 4.8rem;
+$size-title--small: 3.73rem;
+
+$weight-normal: 400;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-family-public-sans;
+    font-size: $size-normal;
+    font-weight: $weight-normal;
+}
