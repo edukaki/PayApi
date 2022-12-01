@@ -1,26 +1,4 @@
-// colors
-$dark-pink: #ba4270;
-$charm-pink: #da6d97;
-$water-white: #fbfcfe;
-$mirage-blue: #1b262f;
-$san-juan-blue: #36536b;
-$san-juan-blue--light: #6c8294;
-
-// box-shadow
-$box-shadow:10px 10px 25px -10px rgba(54, 83, 107, 0.25);
-
-
-// typography
-$font-family-dm-serif: 'DM Serif Display', serif;
-$font-family-public-sans: 'Public Sans', sans-serif;
-
-$size-normal: 15px;
-$size-title--large: 4.8rem;
-$size-title--small: 3.73rem;
-
-$weight-normal: 400;
-$weight-strong:700;
-
+@import './variables.scss';
 * {
     margin: 0;
     padding: 0;
