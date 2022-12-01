@@ -1,0 +1,23 @@
+@import '../../styles/variables.scss';
+
+.general{
+    font-family: $font-family-dm-serif;
+    font-weight: $weight-normal;
+    letter-spacing: -0.19px;
+}
+
+.main, .section, .common{
+    font-size: $size-title--small;
+}
+
+.main--blue, .section--blue{
+    color: $san-juan-blue;
+}
+
+.main--white, .section--white{
+    color: $water-white;
+}
+
+.common{
+    color: $dark-pink;
+}
