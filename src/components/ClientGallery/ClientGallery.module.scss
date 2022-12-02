@@ -1,0 +1,13 @@
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 85%;
+}
+
+.gallery svg{
+    max-height: 31px;
+    margin: .5rem 0;
+}
