@@ -1,0 +1,19 @@
+@import '../../styles/variables.scss';
+
+p{
+    text-align: center;
+    font-size: $size-normal;
+    font-weight: $weight-normal;
+    line-height: 1.85rem;
+    padding-top: 1rem;
+    padding-bottom: 2.1rem;
+}
+
+.white{
+    color: $water-white;
+    opacity: .7;
+}
+
+.blue{
+    color: $san-juan-blue--light;
+}
