@@ -21,24 +21,24 @@ const Facilities = () => {
                 <FacilitiesCard
                     facilitiesImage={mockup} facilitiesImageAlt='Ui Mockup' imageType='image'
                     titleText='Simple UI & UX'
-                    paragraphText='Our pre-built form is easy to integrate in your app or website’s checkout flow and designed to optimize conversion. '
+                    paragraphText='Our pre-built form is easy to integrate in your app or website’s checkout flow and designed to optimize conversion.'
                 />
 
                 <div className={classNames(Style.gallery,Style.gallery__secondary)}>
                     <FacilitiesCard
                         facilitiesImage={financeIcon} facilitiesImageAlt='finance icon' imageType='icon'
-                        titleText='Simple UI & UX'
-                        paragraphText='Our pre-built form is easy to integrate in your app or website’s checkout flow and designed to optimize conversion. '
+                        titleText='Personal Finances'
+                        paragraphText='Consolidate financial data from multiple sources and categorize transactions up to 2 years of history. Analyze reports to reconcile activities in your account. '
                     />
                     <FacilitiesCard
                         facilitiesImage={bankingIcon} facilitiesImageAlt='banking' imageType='icon'
-                        titleText='Simple UI & UX'
-                        paragraphText='Our pre-built form is easy to integrate in your app or website’s checkout flow and designed to optimize conversion. '
+                        titleText='Banking & Coverage'
+                        paragraphText='With our platform, you can speed up account onboarding and support ongoing payments for checking, savings, credit card, and brokerage accounts.'
                     />
                     <FacilitiesCard
                         facilitiesImage={cardIcon} facilitiesImageAlt='card' imageType='icon'
-                        titleText='Simple UI & UX'
-                        paragraphText='Our pre-built form is easy to integrate in your app or website’s checkout flow and designed to optimize conversion. '
+                        titleText='Consumer Payments'
+                        paragraphText='It’s easier to set up secure bank payments with us through a flow designed with the user experience in mind. Customers could instantly authenticate their account.'
                     />
                 </div>
                 <CallAction callText='Ready to start?' />
