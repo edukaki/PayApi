@@ -1,5 +1,5 @@
 import CallAction from '../CallAction'
-import mockup from '../../assets/home/desktop/illustration-phone-mockup.svg'
+import mockup from '../../assets/img/home/desktop/illustration-phone-mockup.svg'
 import Style from './HomeHeader.module.scss'
 
 const HomeHeader = () => {
