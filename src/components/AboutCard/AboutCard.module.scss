@@ -4,9 +4,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: $mirage-blue;
     gap: 1.7rem;
-    padding: 5.2rem 1.5rem;
+    background-color: $mirage-blue;
+    padding: $containerCard__mobile;
 }
 
 .card__text{
