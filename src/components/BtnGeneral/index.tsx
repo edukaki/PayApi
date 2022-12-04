@@ -3,14 +3,14 @@ import classNames from 'classnames'
 
 type BtnGeneralProps = {
     children: String,
-    type: 'primary' | 'secondary',
+    btnType: 'primary' | 'secondary',
     backgroundTheme?: 'dark' | 'light'
     disabled?: 'disabled'
 }
 
-const BtnGeneral = ({ children, type, backgroundTheme }: BtnGeneralProps) => {
+const BtnGeneral = ({ children, btnType, backgroundTheme }: BtnGeneralProps) => {
     return (
-        <button className={(type === 'secondary' ? backgroundTheme === 'dark' ? 
+        <button className={(btnType === 'secondary' ? backgroundTheme === 'light' ? 
             classNames(style.common,style.secondary,style['secondary--dark']) :
             classNames(style.common,style.secondary,style['secondary--light']) : 
             classNames(style.common,style.primary)
