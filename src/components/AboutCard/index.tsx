@@ -7,13 +7,13 @@ import Style from './AboutCard.module.scss'
 const AboutCard = () => {
     return (
         <div className={Style.card}>
-            <ClientGallery color='light' />
+            <ClientGallery backgroundTheme='dark' />
             <div className={Style.card__text}>
-                <Title type='section' color='white'>Who we work with</Title>
+                <Title type='section' textColor='white'>Who we work with</Title>
                 <Paragraph textColor='white'>
                     Today, millions of people around the world have successfully connected their accounts to apps they love using our API. We provide developers with the tools they need to create easy and accessible experiences for their users.
                 </Paragraph>
-                <BtnGeneral type='secondary' backgroundTheme='light'>About Us</BtnGeneral>
+                <BtnGeneral btnType='secondary' backgroundTheme='dark'>About Us</BtnGeneral>
             </div>
         </div>
     )
