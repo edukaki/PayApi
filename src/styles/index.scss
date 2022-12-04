@@ -10,6 +10,8 @@ body {
     flex-direction: column;
     position: relative;
 
+    background-color: $main-background;
+
     font-family: $font-family-public-sans;
     font-size: $size-normal;
     font-weight: $weight-normal;
