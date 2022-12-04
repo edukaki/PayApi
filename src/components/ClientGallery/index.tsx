@@ -8,17 +8,17 @@ import { v4 as uuidv4 } from 'uuid'
 import style from './ClientGallery.module.scss'
 
 type ClientGalleryProps = {
-  color: 'dark' | 'light'
+  backgroundTheme: 'dark' | 'light'
 }
 
-const ClientGallery = ({color}: ClientGalleryProps) => {
+const ClientGallery = ({backgroundTheme}: ClientGalleryProps) => {
 
   const gallery = [Tesla,Microsoft,Hewlett,Oracle,Google,Nvidia]
 
   return (
     <div className={style.gallery}>
       {gallery.map(Brand => (
-        <Brand fill={(color === 'dark' ? '#36536b' : '#fbfcfe')} key={uuidv4()} />
+        <Brand fill={(backgroundTheme === 'light' ? '#36536b' : '#fbfcfe')} key={uuidv4()} />
       ))}
     </div>
   )
