@@ -6,6 +6,7 @@ import financeIcon from '../../assets/home/desktop/icon-personal-finances.svg'
 import bankingIcon from '../../assets/home/desktop/icon-banking-and-coverage.svg'
 import cardIcon from '../../assets/home/desktop/icon-consumer-payments.svg'
 import classNames from 'classnames'
+import CallAction from '../CallAction'
 
 const Facilities = () => {
     return (
@@ -40,6 +41,7 @@ const Facilities = () => {
                         paragraphText='Our pre-built form is easy to integrate in your app or website’s checkout flow and designed to optimize conversion. '
                     />
                 </div>
+                <CallAction callText='Ready to start?' />
             </aside>
         </>
     )
