@@ -12,7 +12,7 @@ const CallAction = ({ callText, contactUs }: { callText: string, contactUs?: boo
                 <input name='email' type='email' placeholder='Enter email address' />
                 <BtnGeneral btnType='primary'>Schedule a Demo</BtnGeneral>
                 {contactUs === true ?
-                    <p>Have any questions? <strong>Contact Us</strong></p> : ''
+                    <p className={Style.question}>Have any questions? <strong>Contact Us</strong></p> : ''
                 }
             </div>
         </form>
