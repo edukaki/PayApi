@@ -1,4 +1,6 @@
 @import './variables.scss';
+@import './reset-css.scss';
+
 * {
     margin: 0;
     padding: 0;
@@ -11,6 +13,7 @@ body {
     position: relative;
 
     background-color: $main-background;
+    color: $san-juan-blue;
 
     font-family: $font-family-public-sans;
     font-size: $size-normal;
@@ -18,4 +21,5 @@ body {
     
     min-height: 100vh;
     width: 100%;
+    
 }
