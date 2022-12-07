@@ -1,4 +1,4 @@
-import style from './styles/BtnGeneral.module.scss'
+import style from './BtnGeneral.module.scss'
 import classNames from 'classnames'
 
 type BtnGeneralProps = {
