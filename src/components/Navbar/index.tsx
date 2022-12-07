@@ -1,5 +1,5 @@
 import classNames from 'classnames'
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import logo from '../../assets/img/icon_navbar.svg'
 import BtnGeneral from "../BtnGeneral"
@@ -10,7 +10,6 @@ const Navbar = () => {
 
 
     return (
-        <>
             <nav>
                 <Link to='/' className={Style.nav__item} onClick={() => { setIsActive(!isActive) }}><img src={logo} alt='logo' /></Link>
                 <ul className={!isActive ?
@@ -42,7 +41,6 @@ const Navbar = () => {
                     <span className={Style.hamburger__bar}></span>
                 </div>
             </nav>
-        </>
     )
 }
 
