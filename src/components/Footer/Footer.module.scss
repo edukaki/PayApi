@@ -1,0 +1,63 @@
+@import '../../styles/variables.scss';
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 2rem 0;
+    color: $light-gray;
+    font-weight: $weight-strong;
+    background-color: $mirage-blue;
+    gap: 2.5rem;
+
+    z-index: 99;
+
+    background-image: url('../../assets/img/shared/desktop/bg-pattern-circle.svg');
+    background-position: bottom -145vw left 50%;
+    background-repeat: no-repeat;
+    background-size: 200vw;
+}
+
+.logo{
+    width: 135px;
+    height: 38px;
+}
+
+.menu a:hover{
+    opacity: .4;
+}
+
+.logo__menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    
+    width: 100%;
+    opacity: .7;
+
+    font-size: 1.2rem;
+    text-align: center;
+
+}
+
+.social{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 2rem;
+}
+.social svg{
+    width: 100%;
+}
