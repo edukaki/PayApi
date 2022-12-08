@@ -1,6 +1,19 @@
-.main__background--home{
-    background-image: url('../../assets/img/shared/desktop/bg-pattern-circle.svg');
-    background-position: top -115vw left 50%;
+@import '../../styles/variables.scss';
+@import '../About/About.module.scss';
+
+main {
     background-repeat: no-repeat;
     background-size: 200vw;
+}
+
+
+.main__background--home {
+    background-image: url('../../assets/img/shared/desktop/bg-pattern-circle.svg');
+    background-position: top -115vw left 50%;
+}
+
+.main__background--generic {
+    background-image: url('../../assets/img/shared/desktop/bg-pattern-circle.svg');
+    background-position: top -160vw left -20%;
+    margin-top: 2rem;
 }
