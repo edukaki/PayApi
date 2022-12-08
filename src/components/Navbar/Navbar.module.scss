@@ -72,10 +72,6 @@ nav img{
     background-color: $san-juan-blue;
 }
 
-.nav__hamburger--active{
-    border-bottom: solid 1px $water-white;
-}
-
 .nav__hamburger--active .hamburger__bar:nth-child(1) {
     transform: translateY(0px) rotate(45deg);
     background-color: $water-white;
