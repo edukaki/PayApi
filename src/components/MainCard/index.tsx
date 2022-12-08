@@ -1,10 +1,10 @@
 import classNames from "classnames"
 import Paragraph from "../Paragraph"
 import Title from "../Title"
-import Style from './FacilitiesCard.module.scss'
+import Style from './MainCard.module.scss'
 
-const FacilitiesCard = ({facilitiesImage,facilitiesImageAlt, imageType,titleText,paragraphText}:
-    {facilitiesImage:string, facilitiesImageAlt: string , imageType: string, titleText: string, paragraphText: string}) => {
+const MainCard = ({facilitiesImage,facilitiesImageAlt, imageType,titleText,paragraphText}:
+    {facilitiesImage?:string, facilitiesImageAlt?: string , imageType?: string, titleText: string, paragraphText: string}) => {
     return (
         <section className={Style.card}>
             <img className={imageType === 'image' ? 
@@ -21,4 +21,4 @@ const FacilitiesCard = ({facilitiesImage,facilitiesImageAlt, imageType,titleText
     )
 }
 
-export default FacilitiesCard
+export default MainCard
