@@ -15,5 +15,48 @@ main {
 .main__background--generic {
     background-image: url('../../assets/img/shared/desktop/bg-pattern-circle.svg');
     background-position: top -160vw left -20%;
+}
+
+.gallery{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     margin-top: 2rem;
+}
+
+.gallery img{
+    min-height: 375px;
+    min-width: 300px;
+    width: 100%;
+}
+
+.gallery span{
+    font-family: $font-family-dm-serif;
+    font-size: $size-tablet--large;
+    padding-bottom: 1rem;
+}
+
+.gallery__secondary{
+    padding: $containerCard__mobile;
+    gap:3.2rem;
+}
+
+.gallery__secondary h2, .gallery__secondary h3{
+    font-size: 1.6rem;
+}
+
+.gallery__data{
+    border-top: 1px solid $san-juan-blue--transparent;
+    border-bottom: 1px solid $san-juan-blue--transparent;
+    padding-top: 1rem;
+    width: 100%;
+}
+
+.gallery__data p{
+    padding: 0;
+}
+
+.pink{
+    color: $dark-pink;
 }
