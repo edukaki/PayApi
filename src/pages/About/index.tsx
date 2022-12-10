@@ -25,11 +25,11 @@ const About = () => {
                 <div className={classNames(Style.gallery, Style.gallery__secondary)}>
                     <div className={classNames(Style.gallery, Style.gallery__data)}>
                         <Paragraph textColor='blue'>Team Members</Paragraph>
-                        <span>300+</span>
+                        <span className={Style.pink}>300+</span>
                         <Paragraph textColor='blue'>Team Members</Paragraph>
-                        <span>3</span>
+                        <span className={Style.pink}>3</span>
                         <Paragraph textColor='blue'>Team Members</Paragraph>
-                        <span>10M+</span>
+                        <span className={Style.pink}>10M+</span>
                     </div>
 
                     <MainCard
