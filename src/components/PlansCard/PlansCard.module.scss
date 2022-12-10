@@ -1,0 +1,46 @@
+@import '../../styles/variables.scss';
+
+.plan{
+    width: 100%;
+}
+
+.plan button{
+    max-width: fit-content;
+}
+
+.plan h3{
+    margin-bottom: 5.4rem;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    border-top: 1px solid $san-juan-blue--transparent;
+    border-bottom: 1px solid $san-juan-blue--transparent;
+    margin: 1.6rem 0;
+    width: 100%;
+}
+
+.card__check__text{
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;    
+    width: 100%;
+}
+
+.card__check__text svg{
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+.card__check__text p{
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    width: 100%;
+}
+
+.card__benefits{
+    padding: 1.1rem 0;
+}
