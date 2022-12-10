@@ -2,6 +2,7 @@ import { createBrowserRouter } from 'react-router-dom'
 import Layout from '../Layout/Layout'
 import About from '../pages/About'
 import Home from '../pages/Home'
+import Pricing from '../pages/Pricing'
 
 export const router = createBrowserRouter([
     {
@@ -13,7 +14,7 @@ export const router = createBrowserRouter([
             },
             {
                 path: '/pricing',
-                element: <div>pricing</div>
+                element: <Pricing />
             },
             {
                 path: '/about',
