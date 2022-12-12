@@ -15,7 +15,7 @@ const BtnGeneral = ({ children, btnType, backgroundTheme }: BtnGeneralProps) => 
             classNames(style.common,style.secondary,style['secondary--light']) : 
             classNames(style.common,style.primary)
         )} 
-        type='button'
+        type='submit'
         >
             {children}
         </button>
