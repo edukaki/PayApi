@@ -1,0 +1,57 @@
+@import '../../styles/variables.scss';
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    width: 100%;
+}
+
+.form__input{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    
+    opacity: .5;
+}
+.form__input label{
+    padding-left: 1.33rem;
+}
+
+.form__input input,
+.form__input select,
+.form__input textarea{
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid $san-juan-blue--transparent;
+    width: 100%;
+    padding-top: .8rem;
+
+    color: inherit;
+    font: inherit;
+    padding-left: 1.33rem;
+    padding-right: 1.33rem;
+}
+
+.form__input input:focus{
+    border: none;
+}
+
+.form__input textarea{
+    min-height: 4.2rem;
+}
+
+.form__input:nth-child(7) > label{
+    display: flex;
+    text-align: left;
+    font-weight: $weight-strong;
+}
+
+.form__input:nth-child(7) > label > input{
+    width: 40px;
+    margin-right: 1.7rem;
+}
+
+.form button{
+    width: fit-content;
+}
