@@ -3,8 +3,8 @@ import { Formik, Field, Form, FormikHelpers } from 'formik'
 import Style from './FormQuestion.module.scss'
 import BtnGeneral from '../BtnGeneral'
 
-const questionSchema = yup.object({
-    name: yup.string().defined(),
+const QuestionSchema = yup.object().shape({
+    name: yup.string().max(35, 'Must be 15 characters or less').defined(),
     sex: yup
         .mixed()
         .oneOf(['male' as const, 'female' as const, 'other' as const])
@@ -16,7 +16,7 @@ const questionSchema = yup.object({
     news: yup.boolean().nullable()
 })
 
-interface Question extends yup.InferType<typeof questionSchema> {
+interface Question {
     name: string,
     sex: string,
     email: string,
@@ -41,6 +41,7 @@ const FormQuestion = () => {
                         news: false
                     }
                 }
+                validationSchema={QuestionSchema}
                 onSubmit={(
                     values: Question,
                     { setSubmitting }: FormikHelpers<Question>
@@ -52,49 +53,63 @@ const FormQuestion = () => {
                 }
                 }
             >
-                <Form className={Style.form}>
-                    <div className={Style.form__input}>
-                        <label htmlFor='name'>Name</label>
-                        <Field name='name' />
-                    </div>
-                    <div className={Style.form__input}>
-                        <label htmlFor='sex'>Gender</label>
-                        <Field name='sex' as='select'>
-                            <option value=''></option>
-                            <option value='male'>Male</option>
-                            <option value='female'>Female</option>
-                            <option value='other'>Other</option>
-                        </Field>
-                    </div>
-                    <div className={Style.form__input}>
-                        <label htmlFor='email'>Email Address</label>
-                        <Field name='email' type='email' />
-                    </div>
-                    <div className={Style.form__input}>
-                        <label htmlFor='companyName'>Company Name</label>
-                        <Field name='companyName' />
-                    </div>
-                    <div className={Style.form__input}>
-                        <label htmlFor='website'>Website</label>
-                        <Field name='website' type='url' />
-                    </div>
-                    <div className={Style.form__input}>
-                        <label htmlFor='message'>Message</label>
-                        <Field name='message' as='textarea' />
-                    </div>
-                    <div className={Style.form__input}>
-                        <label htmlFor='news'>
-                        <Field 
-                        name='news' 
-                        type='checkbox'
-                        />
-                        Stay up-to-date with company announcements and updates to our API
-                        </label>
-                    </div>
-                    <BtnGeneral btnType='secondary' backgroundTheme='light'>Submit</BtnGeneral>
 
-                </Form>
+                {({ errors, touched }) => (
+                    <Form className={Style.form}>
+                        <div className={Style.form__input}>
+                            <label htmlFor='name'>Name</label>
+                            <Field name='name' />
+                            {errors.name && touched.name ? (
+                                <div>{errors.name}</div>
+                            ) : null}
+                        </div>
+                        <div className={Style.form__input}>
+                            <label htmlFor='sex'>Gender</label>
+                            <Field name='sex' as='select'>
+                                <option value=''></option>
+                                <option value='male'>Male</option>
+                                <option value='female'>Female</option>
+                                <option value='other'>Other</option>
+                            </Field>
+                            {errors.sex && touched.sex ? (
+                                <div>{errors.sex}</div>
+                            ) : null}
+                        </div>
+                        <div className={Style.form__input}>
+                            <label htmlFor='email'>Email Address</label>
+                            <Field name='email' type='email' />
+                            {errors.email && touched.email ? (
+                                <div>{errors.email}</div>
+                            ) : null}
+                        </div>
+                        <div className={Style.form__input}>
+                            <label htmlFor='companyName'>Company Name</label>
+                            <Field name='companyName' />
+                        </div>
+                        <div className={Style.form__input}>
+                            <label htmlFor='website'>Website</label>
+                            <Field name='website' type='url' />
+                        </div>
+                        <div className={Style.form__input}>
+                            <label htmlFor='message'>Message</label>
+                            <Field name='message' as='textarea' />
+                            {errors.message && touched.message ? (
+                                <div>{errors.message}</div>
+                            ) : null}
+                        </div>
+                        <div className={Style.form__input}>
+                            <label htmlFor='news'>
+                                <Field
+                                    name='news'
+                                    type='checkbox'
+                                />
+                                Stay up-to-date with company announcements and updates to our API
+                            </label>
+                        </div>
+                        <BtnGeneral btnType='secondary' backgroundTheme='light'>Submit</BtnGeneral>
 
+                    </Form>
+                )}
             </Formik>
 
         </div>
