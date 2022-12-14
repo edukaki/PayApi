@@ -55,3 +55,13 @@
 .form button{
     width: fit-content;
 }
+
+.errors{
+    color: $dark-pink;
+    text-align: right;
+    padding-top: .5rem;
+}
+
+.errors::first-letter{
+    text-transform: capitalize;
+}
