@@ -4,11 +4,11 @@ import Style from './FormQuestion.module.scss'
 import BtnGeneral from '../BtnGeneral'
 
 const QuestionSchema = yup.object().shape({
-    name: yup.string().max(35, 'Must be 15 characters or less').defined(),
+    name: yup.string().max(35, 'Must be 15 characters or less').min(3,'Must be 3 characters or more').defined(),
     sex: yup
         .mixed()
         .oneOf(['male' as const, 'female' as const, 'other' as const])
-        .defined(),
+        .defined('gender must be defined'),
     email: yup.string().required().email(),
     companyName: yup.string().nullable(),
     website: yup.string().url().nullable(),
@@ -60,7 +60,7 @@ const FormQuestion = () => {
                             <label htmlFor='name'>Name</label>
                             <Field name='name' />
                             {errors.name && touched.name ? (
-                                <div>{errors.name}</div>
+                                <div className={Style.errors}>*{errors.name}.</div>
                             ) : null}
                         </div>
                         <div className={Style.form__input}>
@@ -72,14 +72,14 @@ const FormQuestion = () => {
                                 <option value='other'>Other</option>
                             </Field>
                             {errors.sex && touched.sex ? (
-                                <div>{errors.sex}</div>
+                                <div className={Style.errors}>*{errors.sex}.</div>
                             ) : null}
                         </div>
                         <div className={Style.form__input}>
                             <label htmlFor='email'>Email Address</label>
                             <Field name='email' type='email' />
                             {errors.email && touched.email ? (
-                                <div>{errors.email}</div>
+                                <div className={Style.errors}>*{errors.email}.</div>
                             ) : null}
                         </div>
                         <div className={Style.form__input}>
@@ -94,7 +94,7 @@ const FormQuestion = () => {
                             <label htmlFor='message'>Message</label>
                             <Field name='message' as='textarea' />
                             {errors.message && touched.message ? (
-                                <div>{errors.message}</div>
+                                <div className={Style.errors}>*{errors.message}.</div>
                             ) : null}
                         </div>
                         <div className={Style.form__input}>
