@@ -18,3 +18,11 @@
 .gallery__secondary h2{
     font-size: 1.2rem;
 }
+
+@media screen and (min-width: 768px) {
+    .gallery__secondary{
+    flex-direction: row;
+    gap: 1.0rem;
+    align-items: initial;
+    }
+}
