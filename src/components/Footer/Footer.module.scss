@@ -65,6 +65,8 @@ footer{
 @media screen and (min-width:768px) {
     footer{
         flex-direction: row;
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
     }
 
     .logo__menu{
