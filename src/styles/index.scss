@@ -18,14 +18,19 @@ body {
     font-family: $font-family-public-sans;
     font-size: $size-normal;
     font-weight: $weight-normal;
-    
+
     min-height: 100vh;
     width: 100%;
-    
+
     padding-block-end: 24.33rem;
 }
 
-main{
+main {
     padding-top: 2rem;
 }
 
+@media screen and (min-width:768px) {
+    body {
+        padding-block-end: 13.33rem;
+    }
+}
