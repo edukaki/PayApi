@@ -24,12 +24,6 @@ main {
     margin-top: 2rem;
 }
 
-.gallery img{
-    min-height: 375px;
-    min-width: 300px;
-    width: 100%;
-}
-
 .gallery span{
     font-family: $font-family-dm-serif;
     font-size: $size-tablet--large;
@@ -58,4 +52,27 @@ main {
 
 .pink{
     color: $dark-pink;
+}
+
+@media screen and (min-width:768px) {
+    .main__background--home{
+        background-position: top -158vw left 50%;
+    }
+
+    .gallery__secondary:nth-child(n+2){
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    .main__background--home {
+        background-size: 700px;
+        background-position: top -8% right -24%;
+    }
+
+    .main__background--generic{
+        background-size: 700px;
+        background-position: top -34vw left 117%;
+    }
 }
