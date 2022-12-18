@@ -21,3 +21,10 @@
 .common{
     color: $dark-pink;
 }
+
+@media screen and (min-width:768px) {
+    .main{
+        font-size: $size-title--medium;
+        padding: 0 3.4rem;
+    }
+}
