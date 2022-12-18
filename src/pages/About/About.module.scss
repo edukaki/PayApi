@@ -1,22 +1,56 @@
+@import '../../styles/variables.scss';
+
+.gallery__image {
+    background-image: url('../../assets/img/about/mobile/image-team-members.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 300px;
+    max-height: 500px;
+    width: 100%;
+}
 
 @media screen and (min-width:768px) {
-    .about__card{
+    .about__card {
         display: grid;
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: 1fr 3fr;
         align-items: start;
         text-align: left;
+        width: 100%;
     }
-    
-    .about__card p{
+
+    .about__card p {
         padding-top: 0;
         text-align: left;
     }
 
-    .gallery__data{
+    .gallery__data {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
         gap: 6rem;
+    }
+
+    .gallery__image {
+        background-image: url('../../assets/img/about/tablet/image-team-members.jpg');
+        min-height: 267px;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    .gallery__title > h1:first-of-type{
+        width: 59%;
+        align-self: flex-start;
+        text-align: left;
+        padding-left: 10rem;
+    }
+
+    .gallery__image{
+        background-image: url('../../assets/img/about/desktop/image-team-members.jpg');
+        min-height: 500px;
+    }
+
+    .about__card{
+        padding: $containerCard__desktop;
     }
 }
