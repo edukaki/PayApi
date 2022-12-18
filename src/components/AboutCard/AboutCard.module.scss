@@ -14,3 +14,19 @@
     flex-direction: column;
     align-items: center;
 }
+
+@media screen and (min-width:1440px) {
+    .card{
+        flex-direction: row-reverse;
+        padding: $containerCard__desktop;
+    }
+
+    .card__text{
+        align-items: flex-start;
+    }
+
+    .card__text p{
+        padding-left: 0;
+        text-align: left;
+    }
+}
