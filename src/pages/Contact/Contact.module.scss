@@ -1,0 +1,18 @@
+.form__client h2{
+    padding: 2rem 0;
+}
+
+@media screen and (min-width:1440px) {
+    .main__title > h1:first-of-type{
+        align-self: start;
+        padding-top: 4rem;
+        width: 50%;
+    }
+
+    .form__client{
+        display: grid;
+        grid-template-columns: 40% 60%;
+        width: 100%;
+        align-items: center;
+    }
+}
