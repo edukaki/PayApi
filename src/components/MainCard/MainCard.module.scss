@@ -1,21 +1,27 @@
-.card{
+.card {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1.7rem;
 }
 
-.card__text{
+.card__text {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.image--normal{
+.image--normal {
     width: 100%;
     padding-right: 2rem;
 }
 
-.image--icon{
+.image--icon {
     max-width: 106px;
+}
+
+@media screen and (min-width:768px) {
+    .image--normal {
+        width: 60%;
+    }
 }
