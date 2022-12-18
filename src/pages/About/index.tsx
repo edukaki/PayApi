@@ -1,7 +1,5 @@
 import classNames from 'classnames'
-import MainCard from '../../components/MainCard'
 import Title from '../../components/Title'
-import image from '../../assets/img/about/mobile/image-team-members.jpg'
 import CallAction from '../../components/CallAction'
 import Paragraph from '../../components/Paragraph'
 import Style from '../styles/Pages.module.scss'
@@ -11,7 +9,7 @@ const About = () => {
     return (
         <main className={Style['main__background--generic']}>
             <div className={Style.gallery}>
-                <div className={classNames(Style.gallery, Style.gallery__secondary)}>
+                <div className={classNames(Style.gallery, Style.gallery__secondary, StyleAbout.gallery__title)}>
                     <Title type='main' textColor='blue'>We empower innovators by delivering access to the financial system</Title>
                     <div className={StyleAbout.about__card}>
                         <Title type='section' textColor='blue'>Our Vision</Title>
@@ -26,7 +24,7 @@ const About = () => {
                         </Paragraph>
                     </div>
                 </div>
-                <img src={image} alt='Team members' />
+                <div className={StyleAbout.gallery__image} />
                 <div className={classNames(Style.gallery, Style.gallery__secondary)}>
                     <div className={classNames(Style.gallery, Style.gallery__data, StyleAbout.gallery__data)}>
                         <div>
@@ -55,7 +53,7 @@ const About = () => {
                             We're all passionate about building a more efficient and inclusive financial infrastructure together. At PayAPI, we have diverse backgrounds and skills.
                         </Paragraph>
                     </div>
-                    <CallAction callText='Ready to start?' contactUs={true} />
+                    <CallAction callText='Ready to start?' contactUs={false} />
                 </div>
             </div>
         </main>
