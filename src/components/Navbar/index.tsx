@@ -12,26 +12,31 @@ const Navbar = () => {
     return (
         <nav>
             <Link to='/' className={Style.nav__item} onClick={() => { setIsActive(!isActive) }}><img src={logo} alt='logo' /></Link>
-            <ul className={!isActive ?
+            <div className={!isActive ?
                 classNames(Style.nav__menu) :
                 classNames(Style.nav__menu, Style['nav__menu--active'])
             }>
-                <li className={Style.nav__item}>
-                    <Link to='/' onClick={() => { setIsActive(!isActive) }}>Home</Link>
-                </li>
-                <li className={Style.nav__item}>
-                    <Link to='/pricing' className={Style.nav__item} onClick={() => { setIsActive(!isActive) }}>Pricing</Link>
-                </li>
-                <li className={Style.nav__item}>
-                    <Link to='/about' className={Style.nav__item} onClick={() => { setIsActive(!isActive) }}>About</Link>
-                </li>
-                <li className={Style.nav__item}>
-                    <Link to='/contact' className={Style.nav__item} onClick={() => { setIsActive(!isActive) }}>Contact</Link>
-                </li>
-                <li className={classNames(Style.nav__item, Style.nav__button)}>
-                    <Link to='/invitation'><BtnGeneral btnType="primary">Schedule a Demo</BtnGeneral></Link>
-                </li>
-            </ul>
+                <ul>
+
+                    <li className={Style.nav__item}>
+                        <Link to='/' onClick={() => { setIsActive(!isActive) }}>Home</Link>
+                    </li>
+                    <li className={Style.nav__item}>
+                        <Link to='/pricing' className={Style.nav__item} onClick={() => { setIsActive(!isActive) }}>Pricing</Link>
+                    </li>
+                    <li className={Style.nav__item}>
+                        <Link to='/about' className={Style.nav__item} onClick={() => { setIsActive(!isActive) }}>About</Link>
+                    </li>
+                    <li className={Style.nav__item}>
+                        <Link to='/contact' className={Style.nav__item} onClick={() => { setIsActive(!isActive) }}>Contact</Link>
+                    </li>
+                </ul>
+                <div>
+                    <li className={classNames(Style.nav__item, Style.nav__button)}>
+                        <Link to='/invitation'><BtnGeneral btnType="primary">Schedule a Demo</BtnGeneral></Link>
+                    </li>
+                </div>
+            </div>
             <div className={!isActive ?
                 classNames(Style.nav__hamburger) :
                 classNames(Style.nav__hamburger, Style['nav__hamburger--active'])

@@ -85,3 +85,38 @@ nav img{
     transform: translateY(-8px) rotate(-45deg);
     background-color: $water-white;
 }
+
+@media screen and (min-width:768px) {
+    .hamburger__bar{
+        display: none;
+    }
+
+    .nav__menu{
+        position: unset;
+        height: auto;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: transparent;
+    }
+
+    .nav__menu a{
+        color: $san-juan-blue;
+    }
+
+    .nav__menu ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: center;
+    }
+
+    .nav__item{
+        padding: .59rem;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    .nav__item{
+        padding: 2rem;
+    }
+}
