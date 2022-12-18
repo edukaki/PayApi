@@ -14,3 +14,31 @@
     width: 100%;
     padding-left: 2rem;
 }
+
+@media screen and (min-width:768px) {
+    .card img{
+        width: 45%;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    .card{
+        flex-direction: row-reverse;
+        justify-content: space-around;
+    }
+
+    .card img{
+        width: 25%;
+    }
+
+    .card form{
+        align-items: baseline;
+        flex-direction: column;
+        text-align: left;
+        width: 40%;
+    }
+
+    .card form > div,p{
+        padding-left: 3.5rem;
+    }
+}
