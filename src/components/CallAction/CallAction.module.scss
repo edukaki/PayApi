@@ -25,3 +25,29 @@
 .call__form button{
     width: 100%;
 }
+
+@media screen and (min-width:768px) {
+    .call__form input{
+        padding: 1rem 10.2rem 1rem 2rem;
+    }
+    
+    .input__area{
+        position: relative;
+        width: 445px;
+    }
+    
+    .input__area button{
+        position: absolute;
+        right: 0;
+        bottom: 16px;
+        width: fit-content;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    .call__form{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+}

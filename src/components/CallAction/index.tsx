@@ -8,13 +8,13 @@ const CallAction = ({ callText, contactUs }: { callText: string, contactUs?: boo
             <label htmlFor='email'>
                 <Title type='main' textColor='blue'>{callText}</Title>
             </label>
-            <div>
+            <div className={Style.input__area}>
                 <input name='email' type='email' placeholder='Enter email address' />
                 <BtnGeneral btnType='primary'>Schedule a Demo</BtnGeneral>
-                {contactUs === true ?
-                    <p className={Style.question}>Have any questions? <strong>Contact Us</strong></p> : ''
-                }
             </div>
+            {contactUs === true ?
+                <p className={Style.question}>Have any questions? <strong>Contact Us</strong></p> : ''
+            }
         </form>
     )
 }
