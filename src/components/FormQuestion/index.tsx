@@ -4,7 +4,7 @@ import Style from './FormQuestion.module.scss'
 import BtnGeneral from '../BtnGeneral'
 
 const QuestionSchema = yup.object().shape({
-    name: yup.string().max(35, 'Must be 15 characters or less').min(3,'Must be 3 characters or more').defined(),
+    name: yup.string().max(35, 'Must be 15 characters or less').min(3, 'Must be 3 characters or more').defined(),
     sex: yup
         .mixed()
         .oneOf(['male' as const, 'female' as const, 'other' as const])
