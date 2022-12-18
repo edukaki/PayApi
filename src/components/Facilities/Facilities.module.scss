@@ -22,7 +22,30 @@
 @media screen and (min-width: 768px) {
     .gallery__secondary{
     flex-direction: row;
-    gap: 1.0rem;
+    gap: 1rem;
     align-items: initial;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .gallery__main > section:nth-child(-n+2){
+        align-items: center;
+        flex-direction: row;
+        gap: 2rem;
+        justify-content: space-between;
+    }
+
+    .gallery__main > section:nth-child(2){
+        flex-direction: row-reverse;
+    }
+    
+    .gallery__main > section:nth-child(-n+2) > div{
+        align-items: flex-start;
+        width: 50%;
+    }
+
+    .gallery__main > section:nth-child(-n+2) p{
+        text-align: left;
+        padding-left: 0;
     }
 }
