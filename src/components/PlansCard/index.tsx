@@ -7,6 +7,7 @@ import Style from './PlansCard.module.scss'
 
 type PlanProps = {
     title: string,
+    description: string,
     price: string
     benefits: Array<BenefitsProps>
 }
@@ -20,6 +21,9 @@ const PlansCard = (Plan: PlanProps) => {
     return (
         <div className={Style.plan}>
             <Title type='common'>{Plan.title}</Title>
+            <div className={Style.description}>
+                <Paragraph textColor='blue'>{Plan.description}</Paragraph>
+            </div>
             <span>{Plan.price}</span>
             <div className={Style.card}>
                 <div className={Style.card__benefits}>
