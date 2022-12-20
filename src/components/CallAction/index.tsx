@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import BtnGeneral from '../BtnGeneral'
 import Title from '../Title'
 import Style from './CallAction.module.scss'
@@ -13,7 +14,7 @@ const CallAction = ({ callText, contactUs }: { callText: string, contactUs?: boo
                 <BtnGeneral btnType='primary'>Schedule a Demo</BtnGeneral>
             </div>
             {contactUs === true ?
-                <p className={Style.question}>Have any questions? <strong>Contact Us</strong></p> : ''
+                <p className={Style.question}>Have any questions? <Link to='/contact'><strong>Contact Us</strong></Link></p> : ''
             }
         </form>
     )
