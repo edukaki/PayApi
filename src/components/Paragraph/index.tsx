@@ -2,7 +2,7 @@ import classNames from "classnames"
 import Style from './Paragraph.module.scss'
 
 type ParagraphProps = {
-    children: String
+    children: string
     textColor: 'white' | 'blue'
 }
 

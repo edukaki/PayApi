@@ -2,7 +2,7 @@ import style from './BtnGeneral.module.scss'
 import classNames from 'classnames'
 
 type BtnGeneralProps = {
-    children: String,
+    children: string,
     btnType: 'primary' | 'secondary',
     backgroundTheme?: 'dark' | 'light'
     disabled?: 'disabled'
