@@ -1,14 +1,18 @@
-import CallAction from '../CallAction'
-import mockup from '../../assets/img/home/desktop/illustration-phone-mockup.svg'
-import Style from './HomeHeader.module.scss'
+import React from 'react';
+import CallAction from '../CallAction';
+import mockup from '../../assets/img/home/desktop/illustration-phone-mockup.svg';
+import Style from './HomeHeader.module.scss';
 
 const HomeHeader = () => {
-    return (
-        <header className={Style.card}>
-            <img src={mockup} alt='cellphone mockup' />
-            <CallAction callText='Start building with our APIs for absolutely free.' contactUs={true} />
-        </header>
-    )
-}
+  return (
+    <header className={Style.card}>
+      <img src={mockup} alt="cellphone mockup" />
+      <CallAction
+        callText="Start building with our APIs for absolutely free."
+        contactUs={true}
+      />
+    </header>
+  );
+};
 
-export default HomeHeader
+export default HomeHeader;

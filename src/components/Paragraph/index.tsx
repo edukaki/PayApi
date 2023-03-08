@@ -1,21 +1,24 @@
-import classNames from "classnames"
-import Style from './Paragraph.module.scss'
+import React from 'react';
+import classNames from 'classnames';
+import Style from './Paragraph.module.scss';
 
 type ParagraphProps = {
-    children: string
-    textColor: 'white' | 'blue'
-}
+  children: string;
+  textColor: 'white' | 'blue';
+};
 
 const Paragraph = ({ children, textColor }: ParagraphProps) => {
-    return (
-        <div className={(textColor === 'white' ? 
-        classNames(Style.text,Style.white) :
-        classNames(Style.text,Style.blue))}>
-            <p>
-                {children}
-                </p>
-        </div>
-    )
-}
+  return (
+    <div
+      className={
+        textColor === 'white'
+          ? classNames(Style.text, Style.white)
+          : classNames(Style.text, Style.blue)
+      }
+    >
+      <p>{children}</p>
+    </div>
+  );
+};
 
-export default Paragraph
+export default Paragraph;
