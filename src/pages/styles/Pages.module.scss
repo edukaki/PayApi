@@ -76,3 +76,13 @@ main {
         background-position: top -34vw left 117%;
     }
 }
+
+@media screen and (min-width:1600px) {
+    main{
+        max-width: 70%;
+        margin: auto;
+    }
+    .main__background--home {
+        background: none;
+    }
+}
